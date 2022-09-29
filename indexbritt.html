@@ -1,0 +1,90 @@
+<style> 
+
+</style>
+
+<script>
+    function mijnfunctie(){
+        alert("Check")
+        var x=10;
+        console.log(x);
+
+        var element=document.getElementById("divv");
+        console.log(element.innerHTML);
+        element.innerHTML="Het is gelukt!";
+    }
+
+    function cijferCheck(){
+        var element2 = document.getElementById("inp").value;
+        var element3 = document.getElementById("inp2").value;
+        if (element2.value < 18){
+            console.log("Je bent nog minderjarig");
+        }else{
+            console.log("Je bent meerderjarig");
+        }
+        element2 = parseInt(element2);
+        element3 = parseInt(element3);
+        tot = element2 + element3;
+
+        var num = document.getElementById("num");
+        num.innerHTML = element2+ " + " +element3+ " = " +tot;
+
+    }
+
+    function naamCheck(){
+        var var2 = document.getElementById("nam").value;
+        var titel = document.getElementById("titel")
+        if (var2 == 'fred'){
+            titel.innerHTML="Welkom "+var2
+        }else{
+            titel.innerHTML="Verboden toegang"
+        }
+        console.log(titel)
+    }   
+    
+    let rijtje = [];
+
+    function addCijfer(){
+        var num1 = document.getElementById("inp3").value;
+        rijtje.push(num1);
+        console.log(rijtje);
+        showCijfer();
+    }
+
+    function showCijfer(){
+        var lijstje = document.getElementById("cijferlijst");
+        for(let x in rijtje){
+            lijstje.innerHTML += rijtje[x];
+        }
+    }
+</script>
+
+<h1 id="titel">Website</h1>
+
+<div onclick="mijnfunctie()" id="divv">Als je hier op klikt, gebeurt er iets  </div> <br>
+
+Vul je naam in: <br>
+<input id="nam">
+<input type="button" onclick="naamCheck()" value="Submit">
+<br>
+<br>
+
+Vul een cijfer in: <br>
+<input id="inp"> 
+<br><br>
+Vul nog een cijfer in: <br>
+<input id="inp2"> 
+<br>
+<input type="button" onclick="cijferCheck()" value="Submit">
+
+<br>
+<br>
+
+<div id="num"> </div>
+<br> 
+
+Vul een cijfer in: <br>
+<input id="inp3"> 
+<br>
+<input type="button" onclick="addCijfer()" value="Submit">
+<div id="cijferlijst"> </div>
+
