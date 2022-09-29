@@ -1,0 +1,98 @@
+FOUNDER
+  502  git init
+  503  git status
+  504  git add .
+  511  git commit -m "dit wil ik als message van de commit"
+
+  512  git log
+  513  git branch -M main
+  514  git remote add origin https://github.com/FelixvL/wt2209samengit.git
+
+  515  git push
+  516  git push -u origin main
+
+
+
+COLLEBORATOR
+git clone
+  518  git checkout -b featureFelix
+  521  git add .
+  522  git commit -m "Opmerking over bestand 2"
+
+O
+  528  git status
+  529  git checkout main
+  532  git pull
+  533  git checkout featureFelix
+  534  git merge main
+  535  git push
+  536  history
+
+======================
+
+
+https://education.github.com/git-cheat-sheet-education.pdf
+
+
+
+
+
+
+
+
+
+  482  flask run
+  483  python app.py
+  484  ls
+  485  git branch -a
+  486  git checkout mehmet
+  487  git pull
+  488  git status
+  489  git pull
+  490  git status
+  491  git branch -a
+  492  git checkout -b featureFelix
+  493  git status
+  494  git merge master
+  495  cd ..
+  496  ls
+  497  pwd
+  498  cd Desktop/
+  499  ls
+  500  cd StartmetHTML/
+  501  ls
+  502  git init
+  503  git status
+  504  git add .
+  505  git status
+  506  git commit
+  507  ls
+  508  git status
+  509  git status
+  510  git add .
+  511  git commit -m "dit wil ik als message van de commit"
+  512  git log
+  513  git branch -M main
+  514  git remote add origin https://github.com/FelixvL/wt2209samengit.git
+  515  git push
+  516  git push -u origin main
+  517  git status
+  518  git checkout -b featureFelix
+  519  git status
+  520  git commit -m "Opmerking over bestand 2"
+  521  git add .
+  522  git commit -m "Opmerking over bestand 2"
+  523  git status
+  524  git log
+  525  git push
+  526  git push -u origin featureFelix
+  527  git status
+  528  git status
+  529  git checkout main
+  530  git checkout featureFelix
+  531  git checkout main
+  532  git pull
+  533  git checkout featureFelix
+  534  git merge main
+  535  git push
+  536  history
